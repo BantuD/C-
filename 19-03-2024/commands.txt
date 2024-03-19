@@ -1,0 +1,82 @@
+    1  cls
+    2  clear
+    3  sudo apt install g++
+    4  sudo apt get update
+    5  sudo apt-get update
+    6  sudo apt-get dist-upgrade
+    7  clear
+    8  sudo apt install g++
+    9  cd /bin/
+   10  ls
+   11  cd gcc
+   12  ls
+   13  vim gcc
+   14  clear
+   15  cd ..
+   16  cd /usr/include/c++/11/cstdio
+   17  cd /usr/include/c++/11/
+   18  ls
+   19  vim cstdio
+   20  cd 
+   21  ls
+   22  cd /usr/include/11/
+   23  cd /usr/include/c++/11/
+   24  l
+   25  ls
+   26  vim algorithm 
+   27  cd /usr/include/c++/11
+   28  cd
+   29  ls
+   30  mkdir c++
+   31  cd c++
+   32  ls
+   33  git init
+   34  git remote add origin https://github.com/BantuD/C-.git
+   35  git config --global user.name "BantuD"
+   36  git config --global user.email "rajuldubey30@gmail.com"
+   37  git config --global credential.helper store
+   38  ls
+   39  vim hello.cpp
+   40  g++ hello.cpp hello.o
+   41  g++ hello.cpp -o hello.o
+   42  ls
+   43  explorere.exe .
+   44  explorer.exe .
+   45  ls
+   46  ld hello.o system.o -o hello
+   47  ls
+   48  rm hello.o
+   49  g++ hello.cpp -o hello.s
+   50  vim hello.s
+   51  g++ hello.cpp -S hello.s
+   52  ls
+   53  vim hello.s
+   54  ls
+   55  g++ hello.s -o hello.o
+   56  ld hello.o system.o -o hello
+   57  rm hello.o
+   58  as hello.s -o hello.o
+   59  ld hello.o system.o -o hello
+   60  vim hello.cpp
+   61  ls
+   62  rm hello.s hello.o
+   63  l
+   64  ls
+   65  clear
+   66  ls
+   67  g++ hello.cpp -
+   68  g++ hello.cpp -S hello.s
+   69  as hello.s -o hello.o
+   70  ld hello.o system.o -o hello
+   71  c++ hello.cpp 
+   72  ls
+   73  ./a.out
+   74  ls
+   75  ls -a
+   76  history
+   77  ls
+   78  mkdir 19-03-2024
+   79  mv *.* 19-03-2024/
+   80  ls
+   81  git status
+   82  history >> commands.txt

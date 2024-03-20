@@ -1,8 +1,10 @@
-* 19-03-2024:
+* 19-03-2024:****************************
  Create hello.cpp and converted it into assembly code with commands (cpp to assembly) and tried to compile but it says puts not found when we link it with system.o file
 
   
-*20-03-2024:  
+*20-03-2024:******************************  
+
+>>>>>>Conditional Statements and LOOPS>>>>>>>>>
 1. Used condition statements if else with the help of banner.cpp and used switches with the help of birthday.cpp
 
 2. There are two ways of doing branching in c++ i) if else ii) switches
@@ -16,5 +18,27 @@
 Note: C++ does not recomend to avoid big names for variables but avoid repetation of that variable later 
 
 -> always use ++num instead of num++ because it is faster and does not gives unwanted effects on the programs 
+
+->  ++value (pre increment operator): 3 times faster than post increment operator
+
+-> value++ (post increment operator): it slows the program when converted into assembly code try to void it and generates long code in .S  loop will run 3 times slower
+
+
+>>>>>>>>>>>>>>>>>FUNCTIONS>>>>>>>>>>>>>>>>>>>
+
+Perameter and Argument:
+function(int age)
+function(22)
+age is peramater and 22 is the argument
+_________________________________________________
+
+Ternary Operator: 
+float rate = n < 10 ? 0.80 : 0.75;
+
+__________________________________________________
+(-) is unary operator as well as binary operator
+(&) unary operator as well as binary
+(+) only unary operator
+(?) ternary operator 
 
 

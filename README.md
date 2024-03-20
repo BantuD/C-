@@ -41,4 +41,14 @@ __________________________________________________
 (+) only unary operator
 (?) ternary operator 
 
+Q. Which one is fater ternary operator or if else
+Ans:  it is same
+-> You always have to declare the function before calling it
+
+-> if you pass less arguments than the function want it will give `too few arguments` error
+
+->if you pass more arguments than the function want it will give you `too many arguments` error
+
+
+-> its stupidity to declare the function without writing the statements of it this is called forward declaration (KM Hussain not recommneds it)
 

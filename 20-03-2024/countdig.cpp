@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(void)
+
+{
+	/*
+	int num,count=0;
+	printf("Enter the number: ");
+	scanf("%d",&num);
+
+	while(num>0){
+		count++;
+		num=num/10;
+	}
+	printf("\nThe number has: %d digits\n",count);
+	*/
+
+	long num,
+	int mul=1,count=0;
+	printf("Enter the number: ");
+	scanf("%ld",&num);
+
+	while(mul<num){
+		count++;
+		mul=mul*10;
+	}
+
+        printf("\nThe number has: %d digits\n",count);	
+}

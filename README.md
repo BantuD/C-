@@ -15,4 +15,6 @@
 5. whenever you declare a variable locally it stores it into the memory but the memory is slow so here you can use `register` keyword before datatype it will put it into processor's register but You can not write the address of the register variable because registers don't have addresses 
 Note: C++ does not recomend to avoid big names for variables but avoid repetation of that variable later 
 
+-> always use ++num instead of num++ because it is faster and does not gives unwanted effects on the programs 
+
 

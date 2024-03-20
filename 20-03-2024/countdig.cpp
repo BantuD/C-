@@ -15,11 +15,12 @@ int main(void)
 	printf("\nThe number has: %d digits\n",count);
 	*/
 
-	long num,
+	long num;
 	int mul=1,count=0;
 	printf("Enter the number: ");
 	scanf("%ld",&num);
-
+	if(num<0)
+		num=-num;
 	while(mul<num){
 		count++;
 		mul=mul*10;

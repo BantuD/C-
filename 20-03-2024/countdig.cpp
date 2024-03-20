@@ -21,10 +21,21 @@ int main(void)
 	scanf("%ld",&num);
 	if(num<0)
 		num=-num;
+	
+	/*
 	while(mul<num){
 		count++;
 		mul=mul*10;
 	}
+	*/
+
+	//Different logic with do-while loop
+	
+	do{
+		mul=mul*10;
+		count=count+1;
+		
+	}while(mul<=num);
 
         printf("\nThe number has: %d digits\n",count);	
 }

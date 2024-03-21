@@ -1,5 +1,6 @@
 #include<cstdio>
-extern "C" long GCD(long, long); // this not going to be here it is some other module
+extern "C" long GCD(long, long,long); // this not going to be here it is some other module
+
 			  
 // called a function which is written in assembly 
 // C functions are not mangled and assembly does not do it
@@ -15,5 +16,5 @@ int main(void)
 
 	printf("Two positive Integers: ");
 	scanf("%ld%ld", &m,&n);
-	printf("G.C.D = %ld\n",GCD(m,n));
+	printf("G.C.D = %ld\n",GCD(m,n,123));
 }

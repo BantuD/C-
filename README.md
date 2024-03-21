@@ -59,4 +59,7 @@ Ans:  it is same
 i>Functions 
 used `pow()` function from `cmath` in compute.cpp 
 
+-> function overloading- defining a function whose name mathces with the name of an existing function but with a different list of parameter types
+
+
 

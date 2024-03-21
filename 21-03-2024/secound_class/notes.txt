@@ -1,0 +1,2 @@
+* You can use p=&x and then use p[0] to access that element (new concept) but [p] will not work
+

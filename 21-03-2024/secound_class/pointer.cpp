@@ -4,5 +4,6 @@ int main(void){
 	int *p;
 	p=&x;
 	printf("%d\n",p[0]);
+
 	return 0;
 }

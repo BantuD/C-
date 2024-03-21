@@ -56,19 +56,16 @@ Ans:  it is same
 
 
 *21-03-2024:**********************************************
-i>Functions 
-used `pow()` function from `cmath` in compute.cpp 
+i>Functions: 
+used `pow()` 
+ii> function overloading:
+iii> Name mangling : 
+iv> objdump a.out
+v> called a function which is written in assembly
+vi> Exception handling: 
+vii> creating .o file of .cpp
+viii> default value parameter
 
--> function overloading- defining a function whose name mathces with the name of an existing function but with a different list of parameter types
-
--> after all the code get converted into assembly and it gives function names as lebel names but you can't have two lables with same name thats why c computer uses a technique which is called `mangaled names`
-
-example:
-int compute(int upper) // _Z7computei
-double compute(int upper,float degree) // _Z7computeif
-
-it gives postfixes of the parameters
-
-
+*Pending move gcd assembly code into the folder and try to compile it with compute function
 
 

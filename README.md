@@ -56,5 +56,7 @@ Ans:  it is same
 
 
 *21-03-2024:**********************************************
+i>Functions 
+used `pow()` function from `cmath` in compute.cpp 
 
 

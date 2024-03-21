@@ -70,7 +70,7 @@ viii> default value parameter
 
 ix> Pointers accessing using with []
 x> deviation with pointer using [] and * both methods in deviation.cpp
-
+xi> swap number function with pointers 
 
 
 

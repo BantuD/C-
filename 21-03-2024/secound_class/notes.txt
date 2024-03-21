@@ -15,3 +15,5 @@
 _Z9rectangleffPf
 
 -> capital P is for pointer
+
+-> Created a function which swap two number with pointer both * and [] methods

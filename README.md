@@ -66,6 +66,11 @@ vi> Exception handling:
 vii> creating .o file of .cpp
 viii> default value parameter
 
-*Pending move gcd assembly code into the folder and try to compile it with compute function
+2&&*******
+
+ix> Pointers accessing using with []
+x> deviation with pointer using [] and * both methods in deviation.cpp
+
+
 
 

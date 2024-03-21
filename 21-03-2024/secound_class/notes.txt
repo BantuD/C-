@@ -1,2 +1,17 @@
 * You can use p=&x and then use p[0] to access that element (new concept) but [p] will not work
 
+*deviation with pointer using [] and * both methods in deviation.cpp
+
+* offset is like & when you want the address of a label
+
+*when you want the value of a pointer you can write ptr[0] this will give you the value of the address where it is pointing to but you can use +value and -value to go forward and backward in the addresses which is based on (base +width*index)
+
+*you can use * also to get the value from the data or *ptr = something to put some value to the address where ptr is pointing to 
+
+*for traversing with * you can use () example *(ptr+index) this is same as p[index]
+
+*Mangled name for double rectangle(float length, float breadth,float *perimeter)
+
+_Z9rectangleffPf
+
+-> capital P is for pointer

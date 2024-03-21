@@ -16,7 +16,16 @@ double compute(int upper, float degree) // overloaded funtion
 		}
 		return result;
 	 }
-
+/*
+void compute(float upper){
+	{
+		printf("float compute is called: %f",upper);
+	}
+void compute(double upper){
+        {
+                printf("float compute is called: %f",upper);
+        }
+*/
 int main(void)
 	{
 		int count;

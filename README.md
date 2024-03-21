@@ -61,5 +61,14 @@ used `pow()` function from `cmath` in compute.cpp
 
 -> function overloading- defining a function whose name mathces with the name of an existing function but with a different list of parameter types
 
+-> after all the code get converted into assembly and it gives function names as lebel names but you can't have two lables with same name thats why c computer uses a technique which is called `mangaled names`
+
+example:
+int compute(int upper) // _Z7computei
+double compute(int upper,float degree) // _Z7computeif
+
+it gives postfixes of the parameters
+
+
 
 

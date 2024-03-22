@@ -13,7 +13,7 @@ int main(void){
 	try
 	 {	
 	  printf("First computation with default result: %ld\n",compute(l,u));
-          printf("First computation with default result: %ld\n",compute(l,u,2));
+          printf("second computation without default result: %ld\n",compute(l,u,2));
          }
 
 	catch(int e)

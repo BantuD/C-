@@ -1,0 +1,84 @@
+Topics:
+
+*Function Pointer:************************************** 
+Allow you to pass reference of a code to code 
+when two function getting called by two different functions but the functionality is the
+same it is better to send the reference of the function which you want to call
+and use only one function to call it that is in funPointer.cpp 
+
+
+double CommonSequenceSum(int years, float (*seq)(int))
+{
+
+}
+
+-> calling function addressed by seq
+-> seq return type is float
+
+
+
+
+long *x: pointer to a long type value
+double *y: points to a value of double type
+char (*action)(double,int) : action also a pointer and points to function which have 
+2 parameters which are double and int type and the return type of the function is char
+
+
+
+*return type of the function is float 
+
+*example of function pointer is in funPointer2.cpp
+
+
+Example: 2
+
+float HomeloanRate(double amount)
+{
+
+}
+
+--> you can't provide the default value to the function pointers 
+
+--> we can't use overloaded function with function pointers
+
+
+it is a pointer which address the code regualr pointer addresses the value function
+pointer points the code, you can pass one function to another
+
+
+:Methodologies******************************************************
+
+--> when many people using a same style of programing it is called methodology
+--> like fashion in cloths 
+--> when a codding style becomes popular it is called methodology
+--> dividing code into smaller parts is called moularization
+--> the way of modulerization is called methodology
+
+
+Modularization: Dividing the implementation of a large software into smaller sets of functions 
+known as modules is called modularization. A module can publish a subset of its functions so that 
+the can be called from external modules.
+
+A module is the set of functions which is similar types to solve the problems.
+A module can have 20 functions 16 for user use 4 for itslef
+
+Modularization can enables multiple programmers to simultaneously and independently implement, test and 
+maintain different parts of a software provided it is performed according to following
+rules
+
+1. Functions whose internal implementations depend upon each other should be defined within the same module.
+
+2. A module should only share the immutable information required to call it's published function with external modules.
+
+
+
+
+
+
+
+
+
+
+
+
+

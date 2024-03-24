@@ -74,7 +74,38 @@ xi> swap number function with pointers
 
 
 
+<<<<<<< HEAD
 *24-03-2024:********************************** 
+=======
+*24-03-2024:**********************************************
+
+>Function Pointers
+>Methodology
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> bb87c3b (updated notes and methodology)
 
 
 

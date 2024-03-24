@@ -40,7 +40,8 @@ double IncomeSequenceSum(int years){
 
 //secound parameter (seq) is of function pointer type which
 //addresses code of any function with one paramter of int type
-//and float as its return type 
+//and float as its return type
+//it is mainly used to support function call-back 
 double CommonSequenceSum(int years, float (*seq)(int))
 {
 	double total = 0;

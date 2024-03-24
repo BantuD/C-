@@ -73,10 +73,6 @@ x> deviation with pointer using [] and * both methods in deviation.cpp
 xi> swap number function with pointers 
 
 
-
-<<<<<<< HEAD
-*24-03-2024:********************************** 
-=======
 *24-03-2024:**********************************************
 
 >Function Pointers
@@ -105,6 +101,9 @@ xi> swap number function with pointers
 
 
 
+<<<<<<< HEAD
+>>>>>>> bb87c3b (updated notes and methodology)
+=======
 >>>>>>> bb87c3b (updated notes and methodology)
 
 

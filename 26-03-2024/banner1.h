@@ -1,6 +1,6 @@
+#include<cstdio>
 
 enum Geometry {Rectangular, Triangular, Elliptical};
-
 
 class Banner
 {
@@ -34,7 +34,8 @@ class Banner
 
 		void Triangulate(bool yes)
 		{
-			shape = yes ? Geometry::Triangular : Geometry:: Rectangular;
+			shape = yes ? Geometry::Triangular : Geometry::Rectangular;
+		   //	printf("the value of shape is: %d",shape);
 		}
 		// a const method does not change the state of the
 		// object on which it is called i.e it treats the instance addressed 
@@ -63,7 +64,7 @@ class Banner
 				case Geometry:: Elliptical:
 					k=0.785;
 					break;
-				defaullt:
+				default:
 					k=1.0;
 			};
 

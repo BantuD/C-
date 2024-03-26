@@ -27,3 +27,59 @@ Rul: Use an instance of a class only by calling methods defined by that class on
 -> for stopping people to interact with fields we hide the fields to avoid the direct use of the fields by the user
 
 
+example of default constructor:
+
+1.  Banner()
+                {
+                        width=20;
+                        height=5;
+                        triangular=false;
+                }
+
+ 2. Banner()
+                {
+                        width=20;
+                        height=5;
+                        triangular=false;
+                }
+
+
+
+* Const methods
+
+		double Price()  const
+  		{
+                        float k=triangular ? 0.5 : 1.0;
+                        float rate=width <= height?0.75:0.80;
+
+                        return k*width*height*rate;
+                }
+
+// a const method does not change the state of the object on which it is called
+it is just optional option to put as a flag that this function does not change 
+the value of fields just to indicate other developers
+
+
+
+* concept of this
+whenever you write a function into a class the compiler changes it like 
+Banner::Resize(Banner* this, float w,float h)
+
+
+
+* you'll never see an instance they are in they memory 
+ex: Banner b; b is the object not the instance, b is the identity only
+
+*Binding: binding allows you to pass the address of the instance into the object you can 
+access those fields
+
+
+this: a method autmatically receives a 'this' argumnet which points to the instance refered by the object on which the method is called 
+void Banner::Resize(Banner* this, float w,float h)
+
+
+
+
+
+
+ 

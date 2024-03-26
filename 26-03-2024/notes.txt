@@ -1,0 +1,29 @@
+recap:
+creation of the object is activation
+assigning value to its fields and accessing them using dot operator is called binding
+
+SOLID Principles:
+
+1. Single Responsibility Principle(SRP: 
+There should be exactyly one reason for changing the functionality supported by an object.
+
+Rule: 
+Define members in a class which are required by all of its instances in an identical manner.
+
+
+like you have to calculate the commession for an employee but the employee who is in sales departement in saleds his comession is depends upon his sales but the sales arugment must not be there in the function according the solid to make it universal
+
+
+2. Open Closed Principle (OCP): The functionality exposed by an object should be open for extension but closed for modification.
+
+Rul: Use an instance of a class only by calling methods defined by that class on its instances
+
+->when you use interval(object in screenhost) do not use i.minute=3,.isecond=45
+  (you should not touch the fields )
+
+* Banner1.cpp
+-> people should only work with trangulate() and price() only do not touch the fields width,hight,trangulate
+
+-> for stopping people to interact with fields we hide the fields to avoid the direct use of the fields by the user
+
+

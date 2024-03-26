@@ -58,7 +58,7 @@ example of default constructor:
 // a const method does not change the state of the object on which it is called
 it is just optional option to put as a flag that this function does not change 
 the value of fields just to indicate other developers
-
+* if you change the value of a filed in const method it will show you the error
 
 
 * concept of this
@@ -78,8 +78,33 @@ this: a method autmatically receives a 'this' argumnet which points to the insta
 void Banner::Resize(Banner* this, float w,float h)
 
 
+*enum: basically contains flags Like holidays(yes,no) this will give the value from 0 to n by its own 
 
 
+*Classes are open for addition and close for modification, Any public declaration you can not change, you can add new public declaration, you can change the code inside the function, you can change declaration of private functions but you can not change it in public functions, but you  can change the inner code of public functions
+
+Examples of enum: 
+classes when you book a ticket first,second,third
+days of a week,list of colors
 
 
- 
+* if you don't define any constructor the class will contain the default constructor
+* but you define a constructor with parameters then you have to define a default constructor otherwise it will not contain
+
+*constructor with all the parameters are optional is called default constructor
+
+
+*when a constructor do something beside initializing the fields it is called 
+side effect of the constructor
+example: Displaying a message wiht printf or puts (anything that is not expected to be done is called side effect)
+
+
+*Destructor:
+A Destructor is called just before an instance is deactivated(is removed
+from the memory or it goes out of scope), it is defined to remove any side effect of the constructor
+
+
+ Note: Never pass an object by value always use pointer of it otherwise it will create the copy of it and then calling of it one will make it constructor run 2 times and deconstructor run 4 times	
+
+-> making copy will make extra copy which will consume the space
+-> also it will make extra deconstructor calls

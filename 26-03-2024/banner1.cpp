@@ -1,7 +1,3 @@
-
-enum Geometry {Rectangular, Triangular, Elliptical};
-
-
 class Banner
 {
 	public:  // access control block 
@@ -22,7 +18,6 @@ class Banner
 			width=20;
 			height=5;
 			triangular=false;
-			shape = Geometry::Rectangular;
 		}
 		//Banner::Resize(Banner* this, float w,float h)
 		
@@ -34,38 +29,14 @@ class Banner
 
 		void Triangulate(bool yes)
 		{
-			shape = yes ? Geometry::Triangular : Geometry:: Rectangular;
+			triangular = yes;
 		}
 		// a const method does not change the state of the
-		// object on which it is called i.e it treats the instance addressed 
-
-		//by this argument as read-only
-		
-		void reshape(Geometry g){
-			
-			shape = g;
-		}
+		// object on which it is called
 		double Price()  const
-
-		
-		{	
-			
-			//float k=triangular ? 0.5 : 1.0;
+		{
+			float k=triangular ? 0.5 : 1.0;
 			float rate=width <= height?0.75:0.80;
-
-			float k;
-
-			switch(shape)
-			{
-				case Geometry::Triangular:
-					k=0.5;
-					break;
-				case Geometry:: Elliptical:
-					k=0.785;
-					break;
-				defaullt:
-					k=1.0;
-			};
 
 			return k*width*height*rate;
 		}
@@ -79,8 +50,7 @@ class Banner
 				     // these because they are private
 				     // we hide them from the others
 		bool triangular;
-		Geometry shape;
-		
+
 
 
 };

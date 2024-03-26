@@ -3,9 +3,10 @@
 
 int main(void)
 {
+	/*
 	Banner a;
 	printf("Price of standard banner: %.2f\n",a.Price()); //binding happening
-							      //
+	*/						      //
 	
 	Banner b;
 	float w,h;

@@ -1,0 +1,47 @@
+cd Classes/
+double BannerPrice(float width, flaot height, bool triangular)
+{
+        float k=triangular?0.5:1.0; // if it si rectangular it k is 0.5
+                                    // otherwise it will be 1.0
+
+        return 0.80*k*width*height;
+
+}
+
+* not all the programing languages have true=1 and false=0 they have different actual meaning for it 
+
+* its not an issue that th ecodding of the function is change unless the parameters keeps same 
+
+*Modular says: Dont' pass separate parameters alwas pass the bundle that is something calleed data abstraction
+
+*Data Abastraction: It is a modularization methodology (systamatic sytle) in which the data processed by a program is divided into smaller blocks known as objecys so that each object controls its own 
+state(data) and supports its own behaviour(code).
+
+
+*A class tells the object what data it should contain
+* A class defines a set of members for a particular type of object and these members include fields(variables whose values indicate the state of that object 
+along and methods(functions whose implementation describe the behaviour of the object.
+
+
+* value of field describes the state of the object state is nothing but the data a method in an object which have the logic actually defines the behaviour of the object
+
+* behaviour means function which is insid the object that means it is the behaviour of that object.
+
+* our behaviour on our state (like suppose you're in angry state and somebody ask you for the money you won't give that is your behaviour/action
+
+* in programing code is behaviour 
+
+
+////Classes we have two type of the data in a class fileds(variables) and methods(functions) 
+
+process making object out of the class is called activation
+
+*making an object of the class is called activation or instantiation
+
+*whenver you create an object class can decide the intial values of the fields using the constructors 
+
+
+# can we pass the the indentity of an instance to an another insatnce so that we can call the beheviour/function of the first object behalf of the second object
+like suppose i have a class which is containing all the mtehods and there is anothre class which is purely made out of fields just to store the data i want to call
+method class   
+

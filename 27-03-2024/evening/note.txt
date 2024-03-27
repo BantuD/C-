@@ -1,0 +1,54 @@
+* A reference type (T&) automatically addresses the value of the variable with which it is
+initialized and autmatically indirects to this value where ever it is used
+Example: double Buy(Banner& info,int copies)
+
+Banner b;
+
+
+*With reference you can't move around the data which we can do in pointers
+
+*with reference we need to garantee that the data must exist there we cant
+have null reference
+
+*Poeple uses the references just to avoid copy not manipulate the data 
+
+referece example: 
+
+
+*double Buy(const Banner& info, int copies):
+->
+tells that you can't use those methods who manipulate the states(fields) or (variables) of the array
+
+
+*static filed variable:
+#include<cstdio>
+
+class Interval{                                                                                                                      
+        public:
+
+        private:
+                int id,min,sec;
+                static int count; // static field value is not stored in the instance 
+};                                                                                                                   };                 
+
+*copy constructor -> avoid exactly similar data like id in an object
+
+data abstraction is finished today
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                 

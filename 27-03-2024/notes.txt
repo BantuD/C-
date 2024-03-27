@@ -43,11 +43,32 @@ to call the deconstructor of it
 but when you used Banner a; it assigned the memory by itself and deactivated it by itself but with Banner b; you assigned the memory than its your duty to delete it
 
 
-Banner a;
+Banner a;(Automatic)
 -> Automatically allocatiing memory for an instance on stack such an instance will be automatically deactivated when its identifieer goes out of scope
 
 
-Banner b;
--> such instance must be explicitly deactivate using the delete operator it is very very important to stop memory leakage 
+Banner b;(Dynamic)
+-> this is called dynamic activation of an instance (on heap memeory) using new operator which retrun the address fo this instance
+-> such instance must be explicitly deactivate using the delete operator it is very very important to stop memory leakage (you'll loose the job)
+
+
+
+*Creating an array of objects 
+-> an array of object should not be created into stack it should always be credated into heap
+
+dyanmically activating (using default constructor) instances in an array using new[] object which return the address of the first instance
+  
+
+* there are two models for activating an instace 
+1. automatic activation 
+-> local memory of the function(stack memory/stack fridge) use for tiny objects only not even small (data<128 bytes) 
+-> stack allocation is faster 
+
+
+2. dynamic activation 
+-> puts the instance in the heap memory but heap is not like stack you can ask as much as you want memory from operating system
+-> heap alloactions are indirection the heap needs to scan the available space for it before assigning it 
+ 
+3. static activation (rarely use it not discussed)
 
 

@@ -1,0 +1,53 @@
+27-03-2024:
+
+
+static memeber function:
+function which is not depend on the instance data you should put static before the data type of it 
+such methods are marked with static just to tell 
+static memeber function is independent of instance data and as such it does not require this argument and it can be called directyly on the class (using :: operator)
+
+no static: 
+//Instance memeber functions (not static functions) depends on instance data which it addresses using this argument
+such a method must be called on an object (using . operator)
+
+
+Every program you call it gets a portion in the memory
+Banner b will get in stack this is person memory space for a function when a function returns
+this memory gets destroyed/recycled
+
+problem with stack memory is that its small 
+command 
+ulimit -s show the how much memory for a program
+output: 8192 kb 
+
+if your object is more than 8192 kbs it will give you stack overflow 
+
+how to put object in the heap
+
+Banner* b = new Banner(30,8) // activating object on the heap
+// b will be the pointer to where new call the Banner's constructor and return it's address
+
+b is basically pointer which is in the stack but pointing to an instance which is in the heap memory
+
+but 
+Banner a; is stored in the stack it is having the memory not the pointer
+
+
+*new operator dynamically allocates memory for an instance on  the heap and returns the address of this instance 
+
+but once you done with dynamic heap object you must say
+delete obj_name ;
+
+to call the deconstructor of it 
+
+but when you used Banner a; it assigned the memory by itself and deactivated it by itself but with Banner b; you assigned the memory than its your duty to delete it
+
+
+Banner a;
+-> Automatically allocatiing memory for an instance on stack such an instance will be automatically deactivated when its identifieer goes out of scope
+
+
+Banner b;
+-> such instance must be explicitly deactivate using the delete operator it is very very important to stop memory leakage 
+
+

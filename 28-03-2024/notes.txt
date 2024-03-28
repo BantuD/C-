@@ -1,0 +1,4 @@
+#Subtype - Poloymorphism:
+when theres the requirement for the thick banner where we can set the thickness and add the variable thick.
+we can't add these fields and method in the original banner class because thickness is not for all banners that's why we neet to create another class in which which we can add variable -thickness and +Price() and this class will be called `HardBanner`
+

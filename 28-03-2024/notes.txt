@@ -5,3 +5,36 @@ we can't add these fields and method in the original banner class because thickn
 Subtype Ploy morphism: It is a modularization methodology based upon data abstraction for enabling same operation to be performed on multiple (poly) forms (mops) of objects which share some common behavior.
 
 	a SUBCLASS SUPPORTS INHERITANCE (AUTOMATIC AVAILABILITY) OF MEMBERS DEFINED BY AN EXISTING (BASE OR SUPER) CLASS WITH ABILITY TO OVERRIDE (PROVIDE NEW IMPLEMENTATION FOR THE METHOD IT INHERITS.
+
+It provides support for 
+
+1. Dispatch - When a method defined by a class is called on an object that refers to an instance of its subclass which has overrideen this method then the call is forwarded to the implementation provided by the subclass.
+
+double Buy(const Banner& info, int count)
+{
+
+	info.Price();
+}
+
+
+* -> you can pass HarBanner hB to Buy(hB,4); is will work this is called dispatch
+
+
+SOLID Principles:
+3. Liskov's Substitution Principle (LSP): An object of a sub-type should be acceptable where ever an object of the original type is required.
+
+-> means you can assign child's instance reference to the parrent's class instance identifier;
+
+ex: Banner B;  //Check it once 
+HardBanner hB;
+B = &hB;   
+
+Rule: Define memebers only required by some objects of a class within the subclass of that class.
+
+-> thickness only required by woodbanner do not put it into the main class (Banner class) create one more class which will inherite  all the behaviours of the parrent class then add the behaviour and the field required for it.
+
+
+
+
+
+

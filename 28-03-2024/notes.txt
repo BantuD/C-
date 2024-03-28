@@ -29,9 +29,24 @@ ex: Banner B;  //Check it once
 HardBanner hB;
 B = &hB;   
 
-Rule: Define memebers only required by some objects of a class within the subclass of that class.
+Rule: Define memebers only required by only some objects of a class within the subclass of that class.
 
 -> thickness only required by woodbanner do not put it into the main class (Banner class) create one more class which will inherite  all the behaviours of the parrent class then add the behaviour and the field required for it.
+
+
+*when you make the instance of the card milage, price will be there 
+
+*in c++ even you re-write a function the child class it won't get overridden you'll still get the parent's function called even when you overridden it and call it using child's object.
+
+you need to write `virtual` before the function datatype to make it overridable in the child class 
+
+virtual double price(){
+//statements in parent
+}
+
+double price(){
+//statements in child
+}
 
 
 

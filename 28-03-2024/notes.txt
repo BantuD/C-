@@ -1,4 +1,7 @@
-#Subtype - Poloymorphism:
+#Subtype - Poloymorphism:-
 when theres the requirement for the thick banner where we can set the thickness and add the variable thick.
 we can't add these fields and method in the original banner class because thickness is not for all banners that's why we neet to create another class in which which we can add variable -thickness and +Price() and this class will be called `HardBanner`
 
+Subtype Ploy morphism: It is a modularization methodology based upon data abstraction for enabling same operation to be performed on multiple (poly) forms (mops) of objects which share some common behavior.
+
+	a SUBCLASS SUPPORTS INHERITANCE (AUTOMATIC AVAILABILITY) OF MEMBERS DEFINED BY AN EXISTING (BASE OR SUPER) CLASS WITH ABILITY TO OVERRIDE (PROVIDE NEW IMPLEMENTATION FOR THE METHOD IT INHERITS.

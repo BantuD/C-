@@ -1,0 +1,35 @@
+*if you don't override the virtual function in child class it will left as it is
+
+* if there is a virtual function in you class your object of the class will have
+
+* A call to a virtual memeber function on a pointer/reference is indirected through the v-table pointed by the addressed instance
+
+*Dynamic biniding is only get done for virtual functions in c++ when you call it
+
+
+*why c++ does not make all the functions virtual
+Ans: because it uses dynamic binidin and dynamic biniding is expensive
+
+Done -> PolyMorphic Specialization
+
+
+
+****PolyMorphic Generalization****
+
+2. Interface - An abstract ype does not support activation but can define pure (unimplemented) methods which must be overridden by any class which inherits them in order to support activation.
+
+Solid pricinicples:
+
+4. Interface Seggregation Principle (ISP): The consumer of an object should not be forced to depend on an interface of that object which it does not require.
+
+Rule: Define classes with common methods as subclasses of an abstract type in which those methods are pure.
+
+5. Dependency Inversion Principle (DIP): An object should be consumed through its iterface and not through its implementation.
+
+Rule: Use a class tha inherits from an abstract type only for indirectly  activating instances for that abstract type.
+
+-> like dont write fill_sherical_tank or fill_rectangular_tank only write fill_tank() method
+
+Object Oriented Programming (OOP): It is an paradigm (approach) for implementing complex software application using data abstraction and polymorphic subtyping according to SOLID Principles.
+
+

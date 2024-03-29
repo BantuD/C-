@@ -1,43 +1,32 @@
-#include "namespace.h"
+#include "series1.h"
 
 namespace Series
-
 {
-	
 
-
-	// what we're saying is we're writing code for 
-	
-	linearSequence :: LinearSequence(double first, double second)
+	LinearSequence::LinearSequence(double first, double second)
 	{
-	
 		current = first;
 		step = second - first;
 	}
 
-	double LinearSequence :: Next()
+	double LinearSequence::Next()
 	{
-	
 		double result = current;
 		current += step;
 		return result;
-	
 	}
 
-	PowerSequence :: PowerSequence(double second)
+	PowerSequence::PowerSequence(double second)
 	{
-	
 		current = 1;
 		factor = second;
-	
 	}
 
-	double PowerSequence :: Next()
+	double PowerSequence::Next()
 	{
-	
 		double result = current;
 		current *= factor;
-		return result
-	
+		return result;
 	}
 }
+

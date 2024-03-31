@@ -1,0 +1,51 @@
+i>Functions: 
+used `pow()` function from `cmath` in compute.cpp 
+
+ii> function overloading:- defining a function whose name mathces with the name of an existing function but with a different list of parameter types
+
+iii> Name mangling : 
+-> after all the code get converted into assembly and it gives function names as lebel names but you can't have two lables with same name thats why c computer uses a technique which is called `mangaled names`
+
+example:
+int compute(int upper) // _Z7computei
+double compute(int upper,float degree) // _Z7computeif
+
+it gives postfixes of the parameters example in screenshots
+
+
+*objdump a.out
+
+
+
+// called a function which is written in assembly
+// C functions are not mangled and assembly does not do it
+//"C"  if you dont give "C" compiler will asume that it is mangled
+//and C language does not support name mangling so it will look for mangled name but the name will be not be in the mangled form thats why it won't be able to see the function
+//You can only call those assembly codes from C from which are following the calling convention
+//
+// call compiler based programming languages like c,c++ follows calling convention
+
+
+ix> Exception handling: 
+in exceptiomWM.cpp:
+
+if(upper<lower)
+	throw upper; //exit the function with an exception of int type
+
+*Make the .o file of a file c++ -c file.cpp
+
+*passing the `default value` in exceptionM.cpp
+->default argument which appears at the end of parameter-list is automatically passed by the compiler if it is not passed by the compiler but the default parametering must be done only from left to right and there should not be any gap between them
+
+* raise an exception using throw from a fucntion 
+
+* catch(int e) will only catch exception which is int type it will not catch the exception which is short type
+
+* you can provide multiple catch(data_type e){} to catch different different exceptions 
+
+*catch multiple exception from the single catch block use
+
+catch(...){//statement}
+-> (...) anything goes wrong any exception gets throwed 
+
+

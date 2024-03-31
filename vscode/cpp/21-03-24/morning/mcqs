@@ -1,0 +1,285 @@
+#for Compute:
+
+1. What programming concept ensures that input parameters meet certain criteria before computation?
+   a) Data validation
+   b) Error checking
+   c) Type casting
+   d) Function overloading
+
+2. Which mechanism is used to disrupt the normal flow of a program when exceptional situations occur?
+   a) Error handling
+   b) Code branching
+   c) Variable initialization
+   d) Looping
+
+3. In the provided code, what is the purpose of the condition `step <= 0`?
+   a) To prevent infinite loops
+   b) To handle arithmetic errors
+   c) To ensure positive step values
+   d) To optimize performance
+
+4. Which programming concept involves repetitive execution of a block of code until a specified condition is met?
+   a) Recursion
+   b) Iteration
+   c) Inheritance
+   d) Encapsulation
+
+5. What strategy is commonly used to indicate and manage exceptional conditions in programming?
+   a) Error propagation
+   b) Type inference
+   c) Memory allocation
+   d) Code optimization
+
+6. How do you throw an exception in most programming languages?
+   a) Using the `catch` statement
+   b) Using the `try` block
+   c) Using the `throw` keyword
+   d) Using the `finally` block
+
+7. In exception handling, which block is used to catch exceptions that occur within the `try` block?
+   a) `catch` block
+   b) `finally` block
+   c) `try` block
+   d) `throw` block
+
+8. What is the purpose of the `finally` block in exception handling?
+   a) To handle exceptions thrown by the `catch` block
+   b) To execute code regardless of whether an exception is thrown or not
+   c) To throw exceptions explicitly
+   d) To catch exceptions thrown by the `try` block
+
+Answer Key:
+1. a) Data validation
+2. a) Error handling
+3. c) To ensure positive step values
+4. b) Iteration
+5. a) Error propagation
+6. c) Using the `throw` keyword
+7. a) `catch` block
+8. b) To execute code regardless of whether an exception is thrown or not
+
+# for exception.cpp
+
+1. What is the purpose of the extern keyword used in the declaration of the Compute function?
+code:
+    extern long Compute(int, int, short = 1);
+
+a) It indicates that the function is defined in another source file.
+b) It specifies that the function is static.
+c) It declares the function as a member of a class.
+d) It denotes that the function is inline.
+
+2. In the Compute function declaration, what does the default argument short = 1 signify?
+
+code:
+    extern long Compute(int, int, short = 1);
+
+a) It sets the step parameter to 1 if no argument is provided.
+b) It sets the lower limit to 1 if no argument is provided.
+c) It sets the upper limit to 1 if no argument is provided.
+d) It sets the step parameter to 1 if the provided argument is invalid.
+
+3. What will be the output if the user inputs the lower limit as 5 and the upper limit as 10?
+
+ code:
+    printf("First computation result : %ld\n", Compute(l, u));
+    printf("Second computation result: %ld\n", Compute(l, u, 2));
+    printf("Second computation result: %ld\n", Compute(l, u, -1));
+
+a) Compilation error
+b) Runtime error - Invalid upper limit: 10
+c) Runtime error - Invalid step!
+d) First computation result: Some value, Second computation result: Some value, Second computation result: Some value
+
+4. In the main function, what does the try block signify?
+
+Code:
+    try
+    {
+        // code inside try block
+    }
+
+a) It marks the beginning of exception handling code.
+b) It indicates the start of the program.
+c) It defines a loop for iterative computations.
+d) It specifies a condition for conditional execution.
+
+5. What does the catch(int e) block in the main function handle?
+
+code:
+
+    catch(int e)
+    {
+        printf("Error - Invalid upper limit: %d\n", e);
+    }
+
+a) It handles exceptions related to input/output operations.
+b) It handles exceptions related to invalid upper limits.
+c) It handles exceptions related to invalid step values.
+d) It handles exceptions of unknown types.
+
+6. What does the catch(...) block in the main function signify?
+
+code:
+    catch(...)
+    {
+        puts("Error - Invalid step!");
+    }
+
+a) It catches any exception thrown within the try block.
+b) It catches exceptions related to integer overflow.
+c) It catches exceptions related to memory allocation failures.
+d) It catches exceptions related to type mismatches.
+
+6. What is the significance of the puts("Goodbye."); statement at the end of the main function?
+
+code:
+    puts("Goodbye.");
+
+a) It prints a farewell message to the console.
+b) It handles finalization tasks before program termination.
+c) It indicates successful program execution.
+d) It signals the operating system to release resources.
+
+##ANSWER-SHEET##
+
+1. a) It indicates that the function is defined in another source file.
+2. a) It sets the step parameter to 1 if no argument is provided.
+3. c) Runtime error - Invalid step!
+4. a) It marks the beginning of exception handling code.
+5. b) It handles exceptions related to invalid upper limits.
+6. a) It catches any exception thrown within the try block.
+7. a) It prints a farewell message to the console.
+
+
+# FOR externfunction.cpp
+
+1. What is the purpose of the extern "C" declaration used in the GCD function declaration?
+
+code:
+    extern "C" long GCD(long, long);
+
+a) It indicates that the function is defined in another source file.
+b) It specifies that the function uses C++ linkage.
+c) It specifies that the function is static.
+d) It denotes that the function is inline.
+
+2. In the main function, what does the scanf statement do?
+
+code:
+    scanf("%ld%ld", &m, &n);
+
+a) It prints two positive integers.
+b) It calculates the greatest common divisor of two numbers.
+c) It reads two positive integers from the standard input.
+d) It performs arithmetic operations on two variables.
+
+3. What does the printf("G.C.D = %ld\n", GCD(m, n)); statement in the main function do?
+code:
+    printf("G.C.D = %ld\n", GCD(m, n));
+
+a) It calculates the least common multiple of two numbers.
+b) It calculates the factorial of a number.
+c) It calculates the greatest common divisor of two numbers.
+d) It calculates the absolute difference between two numbers.
+
+4. What is the purpose of the extern "C" declaration in C++?
+
+a) It specifies that the function uses C++ linkage.
+b) It indicates that the function is defined in another source file.
+c) It denotes that the function is inline.
+d) It specifies that the function is static.
+
+5. Which function prototype denotes the correct signature for the GCD function?
+
+a) long GCD(long, long);
+b) long GCD(long m, long n);
+c) long GCD(int, int);
+d) long GCD(long int, long int);
+
+
+## AnswerSheet ##
+1. b) It specifies that the function uses C++ linkage.
+2. c) It reads two positive integers from the standard input.
+3. c) It calculates the greatest common divisor of two numbers.
+4. a) It specifies that the function uses C++ linkage.
+5. a) long GCD(long, long);
+
+
+###  MCQs From Notes ###
+
+1. Which function from the cmath library is utilized in the code to perform arithmetic operations involving exponents?
+
+    a) sqrt()
+    b) pow()
+    c) log()
+    d) sin()
+
+2. What is function overloading?
+
+    a) Defining a function with the same name as an existing function but with different parameter types.
+    b) Defining a function with the same name as an existing function but with the same parameter types.
+    c) Defining a function with different names for different functionalities.
+    d) Defining a function with the same name as an existing function but with different return types.
+
+3. What does name mangling refer to in the context of C++ programming?
+
+    a) It involves converting function names into human-readable labels.
+    b) It involves converting function names into encrypted strings for security purposes.
+    c) It involves converting function names into assembly language instructions.
+    d) It involves altering function names to include information about their parameters for linkage purposes.
+
+4. In the given example, what is the mangling for the function int compute(int upper)?
+    a) _Z7computei
+    b) _Z7computef
+    c) _Z7computei
+    d) _Z7computes
+
+5. How is exception handling demonstrated in the provided code snippet?
+    a) By using the throw keyword to exit the function with a specific exception type.
+    b) By using the try block to wrap code that might throw exceptions and catch block to handle them.
+    c) By using the catch keyword to throw exceptions from a function.
+    d) By using the finally block to handle exceptions raised by the throw keyword.
+
+6. What happens if the condition upper < lower is true in the exceptionWM.cpp file?
+    a) The program terminates abruptly without any error message.
+    b) The function exits with an exception of integer type.
+    c) The function exits with an exception of short type.
+    d) The program prints an error message and continues execution.
+
+7. How can default arguments be utilized in exception handling as mentioned in the provided text?
+    a) By providing default values for exception types in the catch block.
+    b) By automatically passing default values to the throw keyword.
+    c) By automatically passing default values for parameters if they are not provided by the caller.
+    d) By providing default values for the try block parameters.
+
+8. What does the catch(...) block signify in exception handling?
+    a) It catches any exception thrown within the try block.
+    b) It catches exceptions related to integer overflow.
+    c) It catches exceptions related to memory allocation failures.
+    d) It catches exceptions related to type mismatches.
+
+9. Which of the following statements accurately describes the role of the catch(int e) block?
+    a) It handles exceptions related to input/output operations.
+    b) It handles exceptions related to invalid upper limits.
+    c) It handles exceptions related to invalid step values.
+    d) It handles exceptions of unknown types.
+
+10. What convention must be followed to call assembly code from C or C++ as mentioned in the provided text?
+    a) C++ calling convention
+    b) C calling convention
+    c) Assembly calling convention
+    d) Compiler calling convention
+
+    ### Answersheet ###
+
+1. b) pow()
+2. a) Defining a function with the same name as an existing function but with different parameter types.
+3. d) It involves altering function names to include information about their parameters for linkage purposes.
+4. a) _Z7computei
+5. b) By using the try block to wrap code that might throw exceptions and catch block to handle them.
+6. b) The function exits with an exception of integer type.
+7. c) By automatically passing default values for parameters if they are not provided by the caller.
+8. a) It catches any exception thrown within the try block.
+9. b) It handles exceptions related to invalid upper limits.
+10. b) C calling convention

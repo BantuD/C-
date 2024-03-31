@@ -1,0 +1,74 @@
+### MCQ from Notes ###
+
+1, What is the correct method to access the value stored at the address pointed to by a pointer ptr?
+
+    a) ptr
+    b) ptr[0]
+    c) [ptr]
+    d) *ptr
+
+2. How can you navigate forward or backward in memory addresses using a pointer ptr?
+    a) Using ptr++ and ptr--
+    b) Using ptr+value and ptr-value
+    c) Using ptr[value] and ptr[-value]
+    d) Using ptr+offset and ptr-offset
+
+3. What is the significance of * when used with a pointer ptr?
+    a) It indicates the address of the pointer.
+    b) It retrieves the memory address pointed to by the pointer.
+    c) It multiplies the value of the pointer by a given factor.
+    d) It increments the pointer to the next memory location.
+
+4. Which statement correctly describes the mangled name for the function rectangle(float length, float breadth, float *perimeter)?
+    a) _Z9rectangleffPf
+    b) _Z9rectangleff&f
+    c) _Z9rectangleff*p
+    d) _Z9rectangleffPf*
+
+5. What does the capital 'P' signify in the mangled name _Z9rectangleffPf?
+    a) It indicates the presence of a pointer parameter in the function.
+    b) It indicates the presence of a reference parameter in the function.
+    c) It indicates the presence of a character parameter in the function.
+    d) It indicates the presence of a pointer variable in the function.
+
+6. How can you swap two numbers using pointers with both * and [] methods?
+    a) swap(ptr1, ptr2);
+    b) swap(&num1, &num2);
+    c) swap(*ptr1, *ptr2);
+    d) swap(ptr1[], ptr2[]);
+
+7. What is the correct way to access the indexth element of an array using pointer arithmetic?
+    a) *(ptr+index)
+    b) ptr[index]
+    c) *ptr[index]
+    d) ptr(index)
+
+8. How is offset similar to the address-of operator &?
+    a) It retrieves the memory address of a variable.
+    b) It calculates the distance between two memory locations.
+    c) It adjusts the position of a pointer within an array.
+    d) It specifies the starting address of an array.
+
+9. What is the purpose of using *ptr = something; in pointer manipulation?
+    a) It assigns the value something to the memory location pointed to by ptr.
+    b) It assigns the address of something to the pointer ptr.
+    c) It increments the value stored at the memory location pointed to by ptr.
+    d) It retrieves the value stored at the memory location pointed to by ptr.
+
+10. What is the correct syntax to access the (index)th element of an array using pointer arithmetic?
+    a) ptr(index)
+    b) *(ptr+index)
+    c) ptr[index]
+    d) *ptr[index]
+
+
+1. d) *ptr and b) ptr[0]
+2. b) Using ptr+value and ptr-value
+3. d) It retrieves the memory address pointed to by the pointer.
+4. a) _Z9rectangleffPf
+5. a) It indicates the presence of a pointer parameter in the function.
+6. c) swap(*ptr1, *ptr2);
+7. a) *(ptr+index)
+8. b) It calculates the distance between two memory locations.
+9. a) It assigns the value something to the memory location pointed to by ptr.
+10. b) *(ptr+index)

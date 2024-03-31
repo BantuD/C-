@@ -1,0 +1,110 @@
+recap:
+creation of the object is activation
+assigning value to its fields and accessing them using dot operator is called binding
+
+SOLID Principles:
+
+1. Single Responsibility Principle(SRP: 
+There should be exactyly one reason for changing the functionality supported by an object.
+
+Rule: 
+Define members in a class which are required by all of its instances in an identical manner.
+
+
+like you have to calculate the commession for an employee but the employee who is in sales departement in saleds his comession is depends upon his sales but the sales arugment must not be there in the function according the solid to make it universal
+
+
+2. Open Closed Principle (OCP): The functionality exposed by an object should be open for extension but closed for modification.
+
+Rul: Use an instance of a class only by calling methods defined by that class on its instances
+
+->when you use interval(object in screenhost) do not use i.minute=3,.isecond=45
+  (you should not touch the fields )
+
+* Banner1.cpp
+-> people should only work with trangulate() and price() only do not touch the fields width,hight,trangulate
+
+-> for stopping people to interact with fields we hide the fields to avoid the direct use of the fields by the user
+
+
+example of default constructor:
+
+1.  Banner()
+                {
+                        width=20;
+                        height=5;
+                        triangular=false;
+                }
+
+ 2. Banner()
+                {
+                        width=20;
+                        height=5;
+                        triangular=false;
+                }
+
+
+
+* Const methods
+
+		double Price()  const
+  		{
+                        float k=triangular ? 0.5 : 1.0;
+                        float rate=width <= height?0.75:0.80;
+
+                        return k*width*height*rate;
+                }
+
+// a const method does not change the state of the object on which it is called
+it is just optional option to put as a flag that this function does not change 
+the value of fields just to indicate other developers
+* if you change the value of a filed in const method it will show you the error
+
+
+* concept of this
+whenever you write a function into a class the compiler changes it like 
+Banner::Resize(Banner* this, float w,float h)
+
+
+
+* you'll never see an instance they are in they memory 
+ex: Banner b; b is the object not the instance, b is the identity only
+
+*Binding: binding allows you to pass the address of the instance into the object you can 
+access those fields
+
+
+this: a method autmatically receives a 'this' argumnet which points to the instance refered by the object on which the method is called 
+void Banner::Resize(Banner* this, float w,float h)
+
+
+*enum: basically contains flags Like holidays(yes,no) this will give the value from 0 to n by its own 
+
+
+*Classes are open for addition and close for modification, Any public declaration you can not change, you can add new public declaration, you can change the code inside the function, you can change declaration of private functions but you can not change it in public functions, but you  can change the inner code of public functions
+
+Examples of enum: 
+classes when you book a ticket first,second,third
+days of a week,list of colors
+
+
+* if you don't define any constructor the class will contain the default constructor
+* but you define a constructor with parameters then you have to define a default constructor otherwise it will not contain
+
+*constructor with all the parameters are optional is called default constructor
+
+
+*when a constructor do something beside initializing the fields it is called 
+side effect of the constructor
+example: Displaying a message wiht printf or puts (anything that is not expected to be done is called side effect)
+
+
+*Destructor:
+A Destructor is called just before an instance is deactivated(is removed
+from the memory or it goes out of scope), it is defined to remove any side effect of the constructor
+
+
+ Note: Never pass an object by value always use pointer of it otherwise it will create the copy of it and then calling of it one will make it constructor run 2 times and deconstructor run 4 times	
+
+-> making copy will make extra copy which will consume the space
+-> also it will make extra deconstructor calls

@@ -43,9 +43,4 @@ class DiscoBoard : public RectangularBoard, public CircularBoard{
         float Area() const{
             return RectangularBoard::Area() + CircularBoard::Area();
         }
-        float Price() const {
-            printf("\nCustom Price: %f\n",RectangularBoard::Area()*1.25 + CircularBoard::Area()*1.25);
-            return RectangularBoard::Price() + CircularBoard::Price() ;
-
-        }
 };

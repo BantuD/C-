@@ -1,0 +1,51 @@
+#include <cstdio>
+class SignBoard{
+    public:
+        float virtual Area() const= 0;
+        float Price() const{
+            return Area() * 1.25;
+        }
+    private:
+        int id;
+};
+
+class RectangularBoard : public virtual SignBoard{
+    private:
+        float length;
+        float breadth;
+    public:
+        RectangularBoard(float l, float b){
+            length = l;
+            breadth = b;
+        }
+        float Area() const{
+            return length * breadth;
+        }
+};
+
+class CircularBoard : public virtual SignBoard{
+    private:
+        float diameter;
+    public:
+        CircularBoard(float d){
+            diameter = d;
+        }
+        float Area() const{
+            return 3.14 * diameter;
+        }
+};
+
+class DiscoBoard : public RectangularBoard, public CircularBoard{
+    public:
+        DiscoBoard(float l, float b) : RectangularBoard(l, b), CircularBoard(b){
+
+        }
+        float Area() const{
+            return RectangularBoard::Area() + CircularBoard::Area();
+        }
+        float Price() const {
+            printf("\nCustom Price: %f\n",RectangularBoard::Area()*1.25 + CircularBoard::Area()*1.25);
+            return RectangularBoard::Price() + CircularBoard::Price() ;
+
+        }
+};

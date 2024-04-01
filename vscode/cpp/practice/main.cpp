@@ -1,8 +1,15 @@
-#include<cstdio>
-#include "myfun1.h"
-int main(void){
-    printf("\nhello world\n");
-    Rajul::Helloworld().displayMsg();
+#include "classes.h"
+using namespace MyClasses;
 
+void dynamo(Parent1 *ptr1){
+
+    ptr1->displayNames();
+
+}
+
+int main(void){
+
+    Child1 ch1;
+    dynamo(&ch1);
 
 }

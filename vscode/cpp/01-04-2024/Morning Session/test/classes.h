@@ -4,26 +4,27 @@ class Loan{
     private:
         double principle;
         float period;
+        // float rate;
     
     public:
-        double GetPrinciple(){
-
+        double GetPrinciple() const
+        {
             return principle;
         }
         void SetPrinciple(double  amount){
             this->principle=amount;
         }
-        float GetPeriod(){
+        float GetPeriod() const{
             return period;
         }
         void SetPeriod(float pr){
             this->period=pr;
         } 
 
-        virtual float GetRate() = 0;
+        virtual float GetRate() const = 0;
 
         double GetEMI(){
-      
+        //    return 12345.0001;
          return (principle*(1+ GetRate()*period/100 )/(12*period));
             
         } 
@@ -34,22 +35,27 @@ class Loan{
 class PersonalLoan : public Loan
 {
 
-    public:
 
-        float GetRate() 
-            {
-                return GetPrinciple()<=500000?0.15:0.16;
-            } 
-         
+    public:
+    PersonalLoan() {}
+
+  
+        float GetRate() const
+        {
+            return GetPrinciple() < 500000 ? 0.15 : 0.16;
+        }        
 
 };
 class HomeLoan : public Loan{
+    private:
 
     public:
+        HomeLoan(){}
         
-         float GetRate() 
-            {
-                return GetPrinciple()<=20?.1:.11;
-            } 
-    };
+            float GetRate() const
+        {
+            return GetPrinciple() < 2000000 ? 0.1 : 0.11;
+        } 
+};
+
 }

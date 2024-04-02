@@ -49,14 +49,12 @@ void Banking_System(Loan* L,int n){
 
     //Inserting the values in the objects
     for(int i=0;i<n;i++){
-
-
+        
         L[i].SetPrinciple(myData[i][0]);
         L[i].SetPeriod(myData[i][1]);
 
         cout<<"Amount for: Object<"<<i<<"> is: "<<L[i].GetPrinciple()<<" \t for time period:\t "<<L[i].GetPeriod();
         cout<<"\tEMI:\t"<<L[i].GetEMI()<<endl;
-    
     }
     //Calculating the total EMI from of the objects
     double total_emis=GetTotalEMI(L,n);
@@ -91,27 +89,28 @@ int main(void){
             cout<<"\n!!!!!>>>>>Enter a valid option<<<<<!!!!!\n";
             goto here;
     }
-    
-    
-
 }
 
 
-/*
-int main(){
 
-    PersonalLoan p1;
-    p1.SetPrinciple(2000000);
-    p1.SetPeriod(10);
+// int main(){
+
+//     PersonalLoan p1;
+//     p1.SetPrinciple(2000000);
+//     p1.SetPeriod(10);
 
     
-    HomeLoan h1;
-    h1.SetPrinciple(2000000);
-    h1.SetPeriod(10);
+//     HomeLoan h1;
+//     h1.SetPrinciple(2000000);
+//     h1.SetPeriod(10);
 
-    cout<<"Emi for personloan: "<<p1.GetEMI()<<endl;
-    cout<<"Emi for Homeloan: "<<h1.GetEMI()<<endl;
+//     cout<<"Emi for personloan: "<<p1.GetEMI()<<endl;
+//     cout<<"Emi for Homeloan: "<<h1.GetEMI()<<endl;
 
-}
+//     for(int i=0; i<10; i++){
+//         for(int j=0; j<10; ++j){
+//             cout<<myData[i][j]<<" "<<endl;
+//         }
+//     }
 
-*/
+// }

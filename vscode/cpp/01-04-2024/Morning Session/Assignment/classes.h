@@ -22,7 +22,7 @@ class Loan{
 
         virtual float GetRate() = 0;
 
-        double GetEMI(){
+        double GetEMI(){                                                                                   
       
          return (principle*(1+ GetRate()*period/100 )/(12*period));
             

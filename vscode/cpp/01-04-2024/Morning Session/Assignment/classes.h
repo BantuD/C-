@@ -26,8 +26,8 @@ class Loan{
       
          return (principle*(1+ GetRate()*period/100 )/(12*period));
             
-        } 
-
+        }
+        virtual double getLimit()=0;
 
 };
 
@@ -40,16 +40,44 @@ class PersonalLoan : public Loan
             {
                 return GetPrinciple()<=500000?0.15:0.16;
             } 
-         
+        
 
 };
 class HomeLoan : public Loan{
 
     public:
-        
+        // HomeLoan()
+        // {
+               
+        // }
+ 
          float GetRate() 
             {
-                return GetPrinciple()<=20?.1:.11;
-            } 
+               float rate = GetPrinciple()<=20?0.1:.11;
+               rate += GetPrinciple()>=25000?0.01:0;
+
+                
+                // return  GetPrinciple()<=20?0.1:.11;
+                return rate;
+            }
+
+            double getLimit(){
+                return limit;
+            }
+    
+    private:
+        static double limit;    
+    
     };
+
+double HomeLoan::limit=1500000;
+
+class IncRateLoans{  //Asbstract Class
+    public:
+        virtual void setLimit()=0;
+        virtual double getLimit()=0;
+    
+    private:
+};
+
 }

@@ -47,6 +47,7 @@ double GetTotalPrinciple(Loan* l,int n){
 
 void Banking_System(Loan* L,int n){
 
+    HomeLoan* HL = L;
     //Inserting the values in the objects
     for(int i=0;i<n;i++){
 
@@ -54,7 +55,9 @@ void Banking_System(Loan* L,int n){
         L[i].SetPrinciple(myData[i][0]);
         L[i].SetPeriod(myData[i][1]);
 
-        cout<<"Amount for: Object<"<<i<<"> is: "<<L[i].GetPrinciple()<<" \t for time period:\t "<<L[i].GetPeriod();
+        cout<<"Amount for: Object<"<<i<<"> is: "<<L[i].GetPrinciple()<<" \t for time period:\t" 
+        <<L[i].GetPeriod()<<"\trateInc:\t"<<(L[i].GetPrinciple()>HL[i].getLimit()?0.01:0)<<endl;
+
         cout<<"\tEMI:\t"<<L[i].GetEMI()<<endl;
     
     }
@@ -71,7 +74,7 @@ void Banking_System(Loan* L,int n){
 int main(void){
     int n=10;
     int loantype;
-    Loan *PL = new PersonalLoan[n];
+    // Loan *PL = new PersonalLoan[n];
     Loan *HL = new HomeLoan[n];
 
     
@@ -82,7 +85,7 @@ int main(void){
     switch (loantype)
     {
         case 1:
-            Banking_System(PL,n);
+            // Banking_System(PL,n);
             break;
         case 2:
             Banking_System(HL,n);

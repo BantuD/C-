@@ -16,6 +16,9 @@ public class Patient{
       
         patientName=str;
     }
+    public void setDays(int d){
+        noOfDays=d;
+    }
     public void setBed(BedOptions bt ){
 
         switch (bt) {

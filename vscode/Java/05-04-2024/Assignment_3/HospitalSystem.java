@@ -16,10 +16,11 @@ public class HospitalSystem{
         System.out.println("\n***********Enter the name of the patient:************");
         // name = sc.next();
         name = sc.next();
+        patientType.setName(name);
         System.out.println("***************Enter The Days************");
         System.out.print(">>");
         days = sc.nextInt();
-        
+        patientType.setDays(days);
         System.out.println("*********Select Bed Type*************");
         System.out.println("1.ECONOMICAL \n2.SPECIAL \n3.EXECUTIVE");
         System.out.print(">>");
@@ -41,7 +42,7 @@ public class HospitalSystem{
     }
     public static void main(String args[]){
 
-        System.out.println("Please Select the patient Type: \n(1).Noraml Patient\n(2). In House Patient");
+        System.out.println("Please Select the patient Type: \n(1).Noraml Patient\n(2).In House Patient");
         System.out.print(">>");
         int opt = sc.nextInt();
         Patient obj=null;
@@ -51,19 +52,21 @@ public class HospitalSystem{
                 System.out.println("Executed case 1");
                 break;
             case 2:
-                obj = patientSelection(new InHousePatient());
-                System.out.println("Executed case 1");
+                //obj = patientSelection(new InHousePatient());
+                System.out.println("Executed case 2");
+                break;
             default:
                 break;
         }
-        System.out.println("**********Details of the patient***********");
-        System.out.print("Name: "+obj.getName());
 
-        // var p = new InHousePatient();
-        // p.setName("Benson");
-        // p.setBed(BedOptions.SPECIAL);
-        // System.out.println(p.getId());
-        // System.out.println(p.getBedType());
+
+        System.out.println("**********Details of the patient***********\n");
+        System.out.printf("Patient ID: %s%n",obj.getId());
+        System.out.printf("Name: %s%n",obj.getName());
+        System.out.printf("Number of days: %s%n",obj.getDays());
+        System.out.printf("BedType: %s%n",obj.getBedType());
+
+    
     
 
     }
